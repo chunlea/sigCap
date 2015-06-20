@@ -11,7 +11,7 @@
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/cropper/css/cropper.min.css" rel="stylesheet">
     <link href="assets/sigcap/css/sigcap.css" rel="stylesheet">
-    
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -20,16 +20,24 @@
     <![endif]-->
   </head>
   <body>
-    <div>
-      <canvas id="preview"></canvas>
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-6">
+            <canvas id="preview"></canvas>
+          </div>
+          <div class="col-sm-6">
+            <div id="live">
+              <div id="crop">
+                <div id="select">
+              </div>
+            </div>
+            <div id="cam">
+            </div>
+          </div>
+      </div>
+
     </div>
-    <div id="live">
-      <div id="crop">
-        <div id="select">
-        </div>
-      </div>
-      <div id="cam">
-      </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/jquery/js/jquery-1.11.3.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
